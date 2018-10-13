@@ -15,6 +15,8 @@ class Anagram
     indices = mod_array.each_index.select {|index| mod_array[index] == mod_string}
     if indices.length > 0 
       indices.map {|index| original[index]}
+    else 
+      indices
     end 
     binding.pry
   end 
