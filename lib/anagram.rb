@@ -13,7 +13,7 @@ class Anagram
     mod_string = self.word.split(//).sort.join
     indices = mod_array.each_index.select {|index| mod_array[index] == mod_string}
     indices.map {|index| array[index]}
-    # binding.pry
+    binding.pry
   end 
   
   
