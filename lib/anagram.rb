@@ -9,9 +9,10 @@ class Anagram
   end 
   
   def match(array)
-    array.collect! {|string| string.split(//).sort.join}
-    binding.pry
-    self.word.split(//).sort.join
+    mod_array = array.collect! {|string| string.split(//).sort.join}
+    # binding.pry
+    mod_string = self.word.split(//).sort.join
+    mod_array.include? (mod_string)
   end 
   
   
