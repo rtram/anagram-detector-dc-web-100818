@@ -11,7 +11,7 @@ class Anagram
   def match(array)
     mod_array = array.collect {|string| string.split(//).sort.join}
     mod_string = self.word.split(//).sort.join
-    indices = mod_array.each_with_index.map {|same, diff| same == mod_string? diff: nil}
+    indices = mod_array.each_with_index.map {|same, diff| same == mod_string? diff:nil}
     binding.pry
   end 
   
