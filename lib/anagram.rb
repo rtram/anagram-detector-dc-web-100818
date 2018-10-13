@@ -16,7 +16,7 @@ class Anagram
     if indices.length > 0 
       indices.map {|index| original[index]}
     end 
-    # binding.pry
+    binding.pry
   end 
   
   
