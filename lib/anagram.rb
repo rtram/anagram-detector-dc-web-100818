@@ -10,7 +10,7 @@ class Anagram
   end 
   
   def match(array)
-    array_string = array.collect! {|string| string.sort}
+    array_string = array.collect! {|string| string.split.sort}
     binding.pry
     self.word 
   end 
